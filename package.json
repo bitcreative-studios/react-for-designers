@@ -1,0 +1,22 @@
+{
+  "name": "react-for-designers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "react-for-designers",
+  "author": "Bitwhys",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.31.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
