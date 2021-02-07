@@ -17,6 +17,7 @@ a {
 
 .Hero {
   /* with the design in mind we set an explicit height */
+  position: relative;
   height: 920px;
   background: url('../images/wallpaper3.jpg') center center;
   background-size: cover;
@@ -86,4 +87,10 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
