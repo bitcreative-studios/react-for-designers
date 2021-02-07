@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/logo-designcode.svg'
+import logo from '../images/CR8IV-LOGO@128x128.svg'
 import './Header.css'
 
 class Header extends Component {
