@@ -14,6 +14,7 @@ const SectionCaption = styled.div`
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
 `
 
 const SectionCellGroup = styled.div`
