@@ -28,6 +28,13 @@
   border-radius: 10px;
   outline: none;
   cursor: pointer;
+  transition: 300ms;
+  /*transform: translateY();*/
+}
+
+.Header button:hover {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 640px) {
