@@ -1,12 +1,37 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
+import styled from 'styled-components'
+
 import { Layout } from '../layouts'
 import Card from '../components/Card'
 import Section from '../components/Section'
 import Wave from '../components/Wave'
+import Cell from '../components/Cell'
+import cellData from '../../staticdata.json'
+
+const SectionCaption = styled.div`
+  color: #94a4ba;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+`
 
 // markup
 const IndexPage = ({ data }) => {
+  console.log('DEBUG')
   return (
     <Layout>
       <div className="Hero">
@@ -65,6 +90,12 @@ const IndexPage = ({ data }) => {
         components, Grid CSS, animations, interactions, dynamic data with
         Contentful and deploying your site with Netlify."
       />
+      <SectionCaption>12 sections - 6 hours</SectionCaption>
+      <SectionCellGroup>
+        {cellData.cells.map(({ title, image }) => (
+          <Cell image={image} title={title} />
+        ))}
+      </SectionCellGroup>
     </Layout>
   )
 }
