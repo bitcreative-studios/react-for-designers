@@ -3,6 +3,15 @@
   width: 100%;
   padding: 50px 0;
   z-index: 100;
+  /*transition: 0.8 cubic-bezier(0.2, 0.8);*/
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.HeaderScrolled {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  /* gives 'glass/opaque' effect. not enabled by default in firefox.*/
+  backdrop-filter: blur(20px);
 }
 
 .HeaderGroup {

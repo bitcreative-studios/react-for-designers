@@ -27,7 +27,7 @@ a {
 .Hero {
   /* with the design in mind we set an explicit height */
   position: relative;
-  height: 920px;
+  height: 1024px;
   background: url('../images/wallpaper3.jpg') center center;
   background-size: cover;
 }
