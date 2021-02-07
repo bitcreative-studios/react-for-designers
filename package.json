@@ -16,7 +16,13 @@
   },
   "dependencies": {
     "gatsby": "^2.31.1",
+    "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "write": "^2.0.0"
   }
 }
