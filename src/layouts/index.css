@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: 'IBM Plex Sans', -apple-system, sans-serif;
@@ -72,6 +81,24 @@ a {
   justify-items: center;
 }
 
+.Cards h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 20px;
+  background: linear-gradient(93.26deg, #050a27 0%, #4a548c 98.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-content: center;
+}
+
 @media (max-width: 640px) {
   .HeroGroup {
     padding: 100px 20px;
@@ -87,6 +114,17 @@ a {
 
   .Hero .Logos {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

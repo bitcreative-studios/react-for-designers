@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Layout } from '../layouts'
+import Card from '../components/Card'
 
 // markup
 const IndexPage = ({ data }) => {
@@ -43,6 +44,31 @@ const IndexPage = ({ data }) => {
             />
           </path>
         </svg>
+      </div>
+      <div className="Cards">
+        <h2>11 courses, more coming</h2>
+        <div className="CardGroup">
+          <Card
+            title="Design System"
+            text="10 sections"
+            image={require('../images/wallpaper.jpg')}
+          />
+          <Card
+            title="React for Designers"
+            text="12 sections"
+            image={require('../images/wallpaper2.jpg')}
+          />
+          <Card
+            title="Sound Design"
+            text="5 sections"
+            image={require('../images/wallpaper3.jpg')}
+          />
+          <Card
+            title="ARKit 2"
+            text="10 sections"
+            image={require('../images/wallpaper4.jpg')}
+          />
+        </div>
       </div>
     </Layout>
   )
