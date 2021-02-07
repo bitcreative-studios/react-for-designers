@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "commit": "cz"
   },
   "dependencies": {
     "gatsby": "^2.31.1",
@@ -21,8 +22,14 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "write": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
