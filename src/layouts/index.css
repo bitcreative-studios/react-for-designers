@@ -16,11 +16,10 @@ a {
 }
 
 .Hero {
-  background: url('../images/wallpaper3.jpg');
   /* with the design in mind we set an explicit height */
   height: 920px;
+  background: url('../images/wallpaper3.jpg') center center;
   background-size: cover;
-  background-position: center center;
 }
 
 .HeroGroup {
@@ -48,4 +47,22 @@ a {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 100px 20px;
+  }
+
+  .Hero h1 {
+    font-size: 40px;
+  }
+
+  .Hero p {
+    font-size: 24px;
+  }
 }
